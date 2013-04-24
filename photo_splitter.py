@@ -158,6 +158,7 @@ class Application(Tkinter.Frame):
             f = self.newfilename(cropcount)
             print f,croparea
             self.crop(croparea,f)
+        self.quit()
 
     def crop(self,croparea,filename):
         ca=(croparea.left,croparea.top,croparea.right,croparea.bottom)
