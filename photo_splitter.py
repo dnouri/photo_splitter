@@ -149,7 +149,7 @@ class Application(Tkinter.Frame):
 
     def newfilename(self,filenum):
         f,e = os.path.splitext(self.filename)
-        return '%s_%s%s'%(f,filenum, e)
+        return '%s__crop__%s%s'%(f,filenum, e)
 
     def start_cropping(self):
         cropcount = 0
